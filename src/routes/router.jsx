@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import AuthLayout from "../layouts/AuthLayout";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Detail from "../pages/Detail";
 
 const router = createBrowserRouter([
   {
@@ -14,10 +15,16 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch("adventure.json"),
       },
       {
         path: "dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/detail/:id",
+        element: <Detail></Detail>,
+        loader: () => fetch("adventure.json"),
       },
     ],
   },

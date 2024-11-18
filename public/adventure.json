@@ -1,0 +1,223 @@
+[
+  {
+    "id": 1,
+    "adventure_title": "Rainforest Trekking Expedition",
+    "image": "https://i.ibb.co.com/gmhLV28/Jungle.jpg",
+    "category_name": "Hiking",
+    "short_description": "Immerse yourself in lush rainforests on a guided trekking adventure.",
+    "adventure_cost": 120,
+    "booking_availability": true,
+    "location": "Amazon Rainforest, Brazil",
+    "duration": "3 days",
+    "adventure_level": "Moderate",
+    "included_items": ["Guide", "Meals", "First-aid Kit"],
+    "eco_friendly_features": [
+      "Plastic-free supplies",
+      "Locally sourced food"
+    ],
+    "max_group_size": 12,
+    "special_instructions": [
+      "Wear breathable clothing",
+      "Bring mosquito repellent",
+      "Carry a reusable water bottle"
+    ]
+  },
+  {
+    "id": 2,
+    "adventure_title": "Coral Reef Snorkeling",
+    "image": "https://i.ibb.co.com/xJyCnJb/snorkler-and-coral-david-harvey.jpg",
+    "category_name": "Water Adventures",
+    "short_description": "Explore vibrant underwater ecosystems while learning about marine conservation.",
+    "adventure_cost": 80,
+    "booking_availability": true,
+    "location": "Great Barrier Reef, Australia",
+    "duration": "Half-day",
+    "adventure_level": "Easy",
+    "included_items": ["Snorkeling gear", "Marine guide", "Refreshments"],
+    "eco_friendly_features": [
+      "Reef-safe sunscreen",
+      "Educational marine conservation brief"
+    ],
+    "max_group_size": 15,
+    "special_instructions": [
+      "Avoid touching coral",
+      "Wear reef-safe sunscreen",
+      "Bring a towel"
+    ]
+  },
+  {
+    "id": 3,
+    "adventure_title": "Mountain Biking in the Alps",
+    "image": "https://i.ibb.co.com/d2htts2/Mountain-Biking-in-the-Alps.jpg",
+    "category_name": "Cycling",
+    "short_description": "Ride through picturesque trails and alpine landscapes.",
+    "adventure_cost": 150,
+    "booking_availability": true,
+    "location": "Swiss Alps, Switzerland",
+    "duration": "2 days",
+    "adventure_level": "Challenging",
+    "included_items": ["Mountain bike rental", "Helmet", "Trail map"],
+    "eco_friendly_features": [
+      "Bike-only trails",
+      "Eco-friendly accommodations"
+    ],
+    "max_group_size": 8,
+    "special_instructions": [
+      "Wear sturdy footwear",
+      "Pack light",
+      "Carry an energy bar"
+    ]
+  },
+  {
+    "id": 4,
+    "adventure_title": "Desert Camel Safari",
+    "image": "https://i.ibb.co.com/Lt2Mc4p/Desert-Camel-Safari.jpg",
+    "category_name": "Wildlife",
+    "short_description": "Experience the vast serenity of the desert on a traditional camel ride.",
+    "adventure_cost": 100,
+    "booking_availability": true,
+    "location": "Sahara Desert, Morocco",
+    "duration": "1 day",
+    "adventure_level": "Easy",
+    "included_items": ["Camel ride", "Guide", "Traditional meal"],
+    "eco_friendly_features": [
+      "Solar-powered camps",
+      "Low-impact transportation"
+    ],
+    "max_group_size": 10,
+    "special_instructions": [
+      "Bring sunscreen",
+      "Wear lightweight clothing",
+      "Stay hydrated"
+    ]
+  },
+  {
+    "id": 5,
+    "adventure_title": "Volcano Climbing Experience",
+    "image": "https://i.ibb.co.com/b2zFHfv/Hiking-the-Acatenango-Volcano-what-to-pack.jpg",
+    "category_name": "Climbing",
+    "short_description": "Challenge yourself with a trek to an active volcano summit.",
+    "adventure_cost": 200,
+    "booking_availability": true,
+    "location": "Mount Etna, Italy",
+    "duration": "1 day",
+    "adventure_level": "Difficult",
+    "included_items": ["Climbing gear", "Expert guide", "Snacks"],
+    "eco_friendly_features": ["Eco-tourism certified", "Sustainable equipment"],
+    "max_group_size": 6,
+    "special_instructions": [
+      "Wear climbing boots",
+      "Check weather conditions",
+      "Bring gloves"
+    ]
+  },
+  {
+    "id": 6,
+    "adventure_title": "Arctic Wildlife Safari",
+    "image": "https://i.ibb.co.com/G068dKY/Arctic-Wildlife-Safari.webp",
+    "category_name": "Wildlife",
+    "short_description": "Witness polar bears and other Arctic wildlife in their natural habitat.",
+    "adventure_cost": 300,
+    "booking_availability": true,
+    "location": "Svalbard, Norway",
+    "duration": "4 days",
+    "adventure_level": "Moderate",
+    "included_items": ["Cold-weather gear", "Guide", "Accommodation"],
+    "eco_friendly_features": [
+      "Renewable energy lodges",
+      "Wildlife conservation talks"
+    ],
+    "max_group_size": 10,
+    "special_instructions": [
+      "Dress warmly",
+      "Follow guide's instructions",
+      "Bring binoculars"
+    ]
+  },
+  {
+    "id": 7,
+    "adventure_title": "Jungle Night Safari",
+    "image": "https://i.ibb.co.com/Wp5xs9s/NS.jpg",
+    "category_name": "Wildlife",
+    "short_description": "Discover nocturnal creatures on an exciting jungle night safari.",
+    "adventure_cost": 70,
+    "booking_availability": true,
+    "location": "Borneo, Malaysia",
+    "duration": "3 hours",
+    "adventure_level": "Easy",
+    "included_items": ["Torchlight", "Guide", "Snacks"],
+    "eco_friendly_features": ["Eco-certified guides", "Low-impact paths"],
+    "max_group_size": 12,
+    "special_instructions": [
+      "Wear long-sleeved clothing",
+      "Avoid loud noises",
+      "Bring insect repellent"
+    ]
+  },
+  {
+    "id": 8,
+    "adventure_title": "Kayaking Through Mangroves",
+    "image": "https://i.ibb.co.com/FqNzL0d/Kayaking-Through-Mangroves.jpg",
+    "category_name": "Water Adventures",
+    "short_description": "Paddle through serene mangrove forests and discover unique ecosystems.",
+    "adventure_cost": 60,
+    "booking_availability": true,
+    "location": "Krabi, Thailand",
+    "duration": "Half-day",
+    "adventure_level": "Moderate",
+    "included_items": ["Kayak", "Life jacket", "Snacks"],
+    "eco_friendly_features": [
+      "Minimal-disruption routes",
+      "Plastic-free supplies"
+    ],
+    "max_group_size": 10,
+    "special_instructions": [
+      "Wear water shoes",
+      "Bring a dry bag",
+      "Carry sunscreen"
+    ]
+  },
+  {
+    "id": 9,
+    "adventure_title": "Eco-Safari in Savanna",
+    "image": "https://i.ibb.co.com/hKFjfKp/Eco-Safari-in-Savanna.jpg",
+    "category_name": "Wildlife",
+    "short_description": "Explore the African savanna and witness the Big Five.",
+    "adventure_cost": 400,
+    "booking_availability": true,
+    "location": "Serengeti, Tanzania",
+    "duration": "5 days",
+    "adventure_level": "Moderate",
+    "included_items": ["Accommodation", "Meals", "Guide"],
+    "eco_friendly_features": [
+      "Solar-powered lodges",
+      "Wildlife conservation fee"
+    ],
+    "max_group_size": 15,
+    "special_instructions": [
+      "Carry a camera",
+      "Wear neutral clothing",
+      "Respect wildlife boundaries"
+    ]
+  },
+  {
+    "id": 10,
+    "adventure_title": "Glacier Hiking Adventure",
+    "image": "https://i.ibb.co.com/d7vvWq0/Glacier-Hiking-Adventure.webp",
+    "category_name": "Hiking",
+    "short_description": "Hike across stunning glaciers with expert guides.",
+    "adventure_cost": 180,
+    "booking_availability": true,
+    "location": "Vatnajökull Glacier, Iceland",
+    "duration": "Full-day",
+    "adventure_level": "Difficult",
+    "included_items": ["Crampons", "Helmet", "Guide"],
+    "eco_friendly_features": ["Leave-no-trace policy", "Recyclable equipment"],
+    "max_group_size": 8,
+    "special_instructions": [
+      "Wear insulated clothing",
+      "Check weather conditions",
+      "Follow safety instructions"
+    ]
+  }
+]
