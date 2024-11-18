@@ -16,12 +16,15 @@ const Card = ({ pack }) => {
         <div className="card-body">
           <h2 className="text-lg font-bold">{adventure_title}</h2>
           <p className="text-sm text-gray-200">
-            {eco_friendly_features?.map((item,idx) => (
+            {eco_friendly_features?.map((item, idx) => (
               <li key={idx}>{item}</li>
             ))}
           </p>
           <div className="card-actions justify-end">
-            <Link to={`/detail/${pack.id}`} className="btn bg-green-600 text-white border-none shadow-md">
+            <Link
+              to={`/detail/${pack.id}`}
+              className="btn bg-green-600 text-white border-none shadow-md"
+            >
               Explore Now
             </Link>
           </div>

@@ -8,7 +8,7 @@ const Detail = () => {
   //   console.log(data);
   const [pack, setPack] = useState({});
   useEffect(() => {
-    const oneData = data?.find((p) => p.id == id);
+    const oneData = data && data?.find((p) => p.id == id);
     setPack(oneData);
   }, [id, data]);
 
@@ -89,7 +89,7 @@ const Detail = () => {
           <p className="text-md font-bold mb-2">
             Cost:{" "}
             <span className="text-sm text-gray-500 font-medium">
-             $ {adventure_cost}
+              $ {adventure_cost}
             </span>
           </p>
           <hr />

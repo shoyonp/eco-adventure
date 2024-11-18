@@ -6,6 +6,7 @@ import AuthLayout from "../layouts/AuthLayout";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Detail from "../pages/Detail";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/detail/:id",
-        element: <Detail></Detail>,
+        element: (
+          <PrivateRoute>
+            <Detail></Detail>
+          </PrivateRoute>
+        ),
         loader: () => fetch("adventure.json"),
       },
     ],

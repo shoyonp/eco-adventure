@@ -5,6 +5,7 @@ import Card from "../components/Card";
 
 const Home = () => {
   const packages = useLoaderData();
+//   console.log(typeof(packages));
   //   console.log(packages);
   return (
     <div>
