@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import logo from "../assets/assets/Green-Eco-Adventure-Maps-Logo-scaled.jpg";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, UserLogOut } = useContext(AuthContext);
+
   const links = (
     <>
       <li>
@@ -53,7 +56,22 @@ const Navbar = () => {
           <span className="text-4xl">
             <FaUserCircle></FaUserCircle>
           </span>
-          <NavLink to="/auth/login" className="btn border-none bg-green-600 text-white">Login</NavLink>
+          {user && user?.email ? (
+            <button
+              onClick={UserLogOut}
+              className="btn border-none bg-green-600 text-white"
+            >
+              Logout
+            </button>
+          ) : (
+            <NavLink
+              to="/auth/login"
+              className="btn border-none bg-green-600 text-white"
+            >
+              Login
+            </NavLink>
+          )}
+          <div>{user && user.email}</div>
         </div>
       </div>
     </div>
