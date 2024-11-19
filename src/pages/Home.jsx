@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../components/Banner";
 import { useLoaderData } from "react-router-dom";
 import Card from "../components/Card";
+import Activities from "../components/Activities";
 
 const Home = () => {
   const packages = useLoaderData();
@@ -15,6 +16,7 @@ const Home = () => {
           <Card pack={pack} key={idx}></Card>
         ))}
       </div>
+     <div className="mb-10"> <Activities></Activities></div>
     </div>
   );
 };
