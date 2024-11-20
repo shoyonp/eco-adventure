@@ -52,7 +52,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <img src={logo} className="w-10" alt="" />
+          <img src={logo} className="hidden md:flex w-10" alt="" />
           <a className="text-xl font-bold text-green-600">Eco-Adventure</a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <div className="avatar">
                   <div className="ring-primary ring-offset-base-100 w-9 rounded-full ring ring-offset-2">
                     <img
-                    title={user?.displayName}
+                      title={user?.displayName}
                       className="w-14 rounded-full "
                       src={user?.photoURL}
                       alt=""

@@ -16,7 +16,6 @@ export const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  console.log(loading, user);
   const creatNewUser = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
@@ -28,17 +27,22 @@ const AuthProvider = ({ children }) => {
   };
 
   const googleLogin = () => {
-    return new GoogleAuthProvider()
-  } 
+    return new GoogleAuthProvider();
+  };
 
   const UserLogOut = () => {
     setLoading(true);
     return signOut(auth);
   };
 
+//   const forgetPassword = (email) => {
+//     sendPasswordResetEmail(auth, email);
+//     console.log(email);
+//   };
+
   const updateUserProfile = (updatedData) => {
-    return updateProfile(auth.currentUser, updatedData)
-  }
+    return updateProfile(auth.currentUser, updatedData);
+  };
 
   const authInfo = {
     user,

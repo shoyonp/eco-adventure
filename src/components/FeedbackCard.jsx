@@ -1,5 +1,4 @@
 const FeedbackCard = ({ feedback }) => {
-  console.log(feedback);
   const { name, image, rating, location, comment } = feedback;
   return (
     <div>
@@ -13,13 +12,13 @@ const FeedbackCard = ({ feedback }) => {
             />
             <h2 className="card-title">{name}</h2>
           </div>
-          <span className="font-medium text-base">
+          <div className="font-medium text-base">
             Location: <span className="italic text-green-700">{location}</span>
-          </span>
+          </div>
           <p className="text-black/60 text-sm">{comment}</p>
-          <p className="flex items-center gap-5">
+          <div className="flex items-center gap-5">
             Rating: {rating}{" "}
-            <span className="">
+            <div className="">
               <div className="rating">
                 <input
                   type="radio"
@@ -48,8 +47,8 @@ const FeedbackCard = ({ feedback }) => {
                   className="mask mask-star-2 bg-green-500"
                 />
               </div>
-            </span>
-          </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

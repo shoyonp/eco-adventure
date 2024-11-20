@@ -1,15 +1,12 @@
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, AuthContext } from "../provider/AuthProvider";
-import { FcGoogle } from "react-icons/fc";
-import { signInWithPopup } from "firebase/auth";
 
 const Register = () => {
   const { creatNewUser, user, setUser, updateUserProfile, googleLogin } =
     useContext(AuthContext);
   const navigate = useNavigate();
   const [error, setError] = useState("");
-  console.log(error);
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -51,18 +48,19 @@ const Register = () => {
       });
   };
 
-  const handleGoogleSignIn = () => {
-    signInWithPopup(auth, googleLogin())
-      .then((result) => {
-        const user = result.user;
-        setUser(user);
-        navigate("/");
-        console.log(user);
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
-  };
+  // const handleGoogleSignIn = () => {
+  //   signInWithPopup(auth, googleLogin())
+  //     .then((result) => {
+  //       const user = result.user;
+  //       setUser(user);
+  //       navigate("/");
+  //       console.log(user);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error.message);
+  //     });
+  // };
+
   return (
     <div className=" min-h-screen flex justify-center items-center">
       <div className="card bg-base-100 w-full max-w-lg shrink-0 shadow-2xl p-10">
@@ -70,14 +68,14 @@ const Register = () => {
           Register your account
         </h2>
 
-        <div className="mt-5 mx-auto">
+        {/* <div className="mt-5 mx-auto">
           <button
             onClick={handleGoogleSignIn}
             className="btn bg-none text-green-600 "
           >
             <FcGoogle className="text-black"></FcGoogle> SignUp With Google
           </button>
-        </div>
+        </div> */}
 
         <form onSubmit={handleSubmit} className="card-body">
           {/* name */}

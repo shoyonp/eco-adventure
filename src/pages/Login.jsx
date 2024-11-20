@@ -1,15 +1,17 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { auth, AuthContext } from "../provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
-import { signInWithPopup } from "firebase/auth";
+import { sendPasswordResetEmail, signInWithPopup } from "firebase/auth";
+
 
 const Login = () => {
-  const { userLogin, setUser, googleLogin } = useContext(AuthContext);
+  const { userLogin, setUser, googleLogin, forgetPassword } =
+    useContext(AuthContext);
   const [error, setError] = useState({});
   const location = useLocation();
   const navigate = useNavigate();
-  console.log(location);
+  const emailRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -40,23 +42,25 @@ const Login = () => {
         console.log(error.message);
       });
   };
+
+  const handleForgetPassword = () => {
+    const email = emailRef.current.value;
+    if (!email) {
+      // toast("please provide an valid email");
+      console.log("valid email");
+    } else {
+      sendPasswordResetEmail(auth, email).then(() => {
+        alert("Password reset email sent, please check your email ");
+      });
+    }
+  };
+
   return (
     <div className=" min-h-screen flex justify-center items-center">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl p-10">
         <h2 className="text-2xl font-semibold text-center">
           Login your account
         </h2>
-
-        <div className="mt-5 mx-auto">
-          <button
-            onClick={handleGoogleSignIn}
-            className="btn bg-none text-green-600 "
-          >
-            <FcGoogle className="text-black"></FcGoogle> Login With Google
-          </button>
-        </div>
-        <h2 className="font-bold text-lg mt-4 text-center">Or</h2>
-        <hr />
         <form onSubmit={handleSubmit} className="card-body">
           <div className="form-control">
             <label className="label">
@@ -66,6 +70,7 @@ const Login = () => {
               type="email"
               name="email"
               placeholder="email"
+              ref={emailRef}
               className="input input-bordered"
               required
             />
@@ -86,7 +91,7 @@ const Login = () => {
                 {error.login}
               </label>
             )}
-            <label className="label">
+            <label onClick={handleForgetPassword} className="label">
               <a href="#" className="label-text-alt link link-hover">
                 Forgot password?
               </a>
@@ -96,6 +101,15 @@ const Login = () => {
             <button className="btn bg-green-600 text-white ">Login</button>
           </div>
         </form>
+        <h2 className="font-bold text-lg  divider text-center">Or</h2>
+        <div className="mb-3 mx-auto">
+          <button
+            onClick={handleGoogleSignIn}
+            className="btn bg-none text-green-600 "
+          >
+            <FcGoogle className="text-black"></FcGoogle> Login With Google
+          </button>
+        </div>
 
         <p className="text-center font-semibold">
           Dont't Have An Account ?{" "}
