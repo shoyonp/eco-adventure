@@ -54,7 +54,23 @@ const Navbar = () => {
         </div>
         <div className="navbar-end gap-3">
           <span className="text-4xl">
-            <FaUserCircle></FaUserCircle>
+            {user && user?.email ? (
+              <div>
+                <div className="avatar">
+                  <div className="ring-primary ring-offset-base-100 w-9 rounded-full ring ring-offset-2">
+                    <img
+                    title={user?.displayName}
+                      className="w-14 rounded-full "
+                      src={user?.photoURL}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                {/* <p className="text-sm">{user?.displayName}</p> */}
+              </div>
+            ) : (
+              <FaUserCircle></FaUserCircle>
+            )}
           </span>
           {user && user?.email ? (
             <button
@@ -71,7 +87,7 @@ const Navbar = () => {
               Login
             </NavLink>
           )}
-          <div>{user && user.email}</div>
+          {/* <div>{user && user.email}</div> */}
         </div>
       </div>
     </div>

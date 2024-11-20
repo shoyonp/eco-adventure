@@ -1,9 +1,13 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
-import { AuthContext } from "../provider/AuthProvider";
+import { Link, useNavigate } from "react-router-dom";
+import { auth, AuthContext } from "../provider/AuthProvider";
+import { FcGoogle } from "react-icons/fc";
+import { signInWithPopup } from "firebase/auth";
 
 const Register = () => {
-  const { creatNewUser, user, setUser } = useContext(AuthContext);
+  const { creatNewUser, user, setUser, updateUserProfile, googleLogin } =
+    useContext(AuthContext);
+  const navigate = useNavigate();
   const [error, setError] = useState("");
   console.log(error);
   const handleSubmit = (e) => {
@@ -33,11 +37,30 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         setUser(user);
-        console.log(user);
+        updateUserProfile({ displayName: name, photoURL: photo })
+          .then(() => {
+            navigate("/");
+          })
+          .catch((error) => {
+            console.log(error);
+          });
       })
       .catch((error) => {
         console.log(error.message);
         setError(error.message);
+      });
+  };
+
+  const handleGoogleSignIn = () => {
+    signInWithPopup(auth, googleLogin())
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+        navigate("/");
+        console.log(user);
+      })
+      .catch((error) => {
+        console.log(error.message);
       });
   };
   return (
@@ -46,6 +69,16 @@ const Register = () => {
         <h2 className="text-2xl font-semibold text-center">
           Register your account
         </h2>
+
+        <div className="mt-5 mx-auto">
+          <button
+            onClick={handleGoogleSignIn}
+            className="btn bg-none text-green-600 "
+          >
+            <FcGoogle className="text-black"></FcGoogle> SignUp With Google
+          </button>
+        </div>
+
         <form onSubmit={handleSubmit} className="card-body">
           {/* name */}
           <div className="form-control">

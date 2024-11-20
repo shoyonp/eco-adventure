@@ -1,9 +1,11 @@
 import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AuthContext } from "../provider/AuthProvider";
+import { auth, AuthContext } from "../provider/AuthProvider";
+import { FcGoogle } from "react-icons/fc";
+import { signInWithPopup } from "firebase/auth";
 
 const Login = () => {
-  const { userLogin, setUser } = useContext(AuthContext);
+  const { userLogin, setUser, googleLogin } = useContext(AuthContext);
   const [error, setError] = useState({});
   const location = useLocation();
   const navigate = useNavigate();
@@ -25,12 +27,36 @@ const Login = () => {
         setError({ ...error, login: err.message });
       });
   };
+
+  const handleGoogleSignIn = () => {
+    signInWithPopup(auth, googleLogin())
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+        navigate(location?.state ? location.state : "/");
+        console.log(user);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   return (
     <div className=" min-h-screen flex justify-center items-center">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl p-10">
         <h2 className="text-2xl font-semibold text-center">
           Login your account
         </h2>
+
+        <div className="mt-5 mx-auto">
+          <button
+            onClick={handleGoogleSignIn}
+            className="btn bg-none text-green-600 "
+          >
+            <FcGoogle className="text-black"></FcGoogle> Login With Google
+          </button>
+        </div>
+        <h2 className="font-bold text-lg mt-4 text-center">Or</h2>
+        <hr />
         <form onSubmit={handleSubmit} className="card-body">
           <div className="form-control">
             <label className="label">
@@ -55,7 +81,11 @@ const Login = () => {
               className="input input-bordered"
               required
             />
-            {error.login && <label className="label text-sm text-red-600">{error.login}</label>}
+            {error.login && (
+              <label className="label text-sm text-red-600">
+                {error.login}
+              </label>
+            )}
             <label className="label">
               <a href="#" className="label-text-alt link link-hover">
                 Forgot password?
@@ -66,6 +96,7 @@ const Login = () => {
             <button className="btn bg-green-600 text-white ">Login</button>
           </div>
         </form>
+
         <p className="text-center font-semibold">
           Dont't Have An Account ?{" "}
           <Link className="text-green-600" to="/auth/register">
