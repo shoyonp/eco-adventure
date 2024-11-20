@@ -1,22 +1,35 @@
 import React from "react";
 import Banner from "../components/Banner";
-import { useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 import Card from "../components/Card";
 import Activities from "../components/Activities";
+import Feedback from "../components/Feedback";
 
 const Home = () => {
   const packages = useLoaderData();
-//   console.log(typeof(packages));
-  //   console.log(packages);
+  const { packagesData, feedbackData } = packages;
   return (
     <div>
       <Banner></Banner>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        {packages && packages?.map((pack, idx) => (
-          <Card pack={pack} key={idx}></Card>
-        ))}
+        {packagesData &&
+          packagesData
+            ?.slice(0, 4)
+            .map((pack, idx) => <Card pack={pack} key={idx}></Card>)}
       </div>
-     <div className="mb-10"> <Activities></Activities></div>
+      <NavLink
+        to="/allPlaces"
+        className=" my-6 btn bg-green-600 text-white border-none shadow-md"
+      >
+        Show More
+      </NavLink>
+      <div className="mb-10">
+        {" "}
+        <Activities></Activities>
+      </div>
+      <div className="mb-10">
+        <Feedback feedbackData={feedbackData}></Feedback>
+      </div>
     </div>
   );
 };

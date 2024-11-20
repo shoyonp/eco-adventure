@@ -7,6 +7,8 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Detail from "../pages/Detail";
 import PrivateRoute from "./PrivateRoute";
+import Allplaces from "../pages/Allplaces";
+import MyProfile from "../layouts/MyProfile";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,19 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: async () => {
+          const packagesRes = await fetch("/adventure.json");
+          const packagesData = await packagesRes.json();
+
+          const feedbackRes = await fetch("/feedback.json");
+          const feedbackData = await feedbackRes.json();
+
+          return { packagesData, feedbackData };
+        },
+      },
+      {
+        path: "/allPlaces",
+        element: <Allplaces></Allplaces>,
         loader: () => fetch("/adventure.json"),
       },
       {
@@ -30,6 +45,14 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("/adventure.json"),
+      },
+      {
+        path: "myProfile",
+        element: (
+          <PrivateRoute>
+            <MyProfile></MyProfile>
+          </PrivateRoute>
+        ),
       },
     ],
   },

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Emily Thompson",
+    "image": "https://i.ibb.co.com/644rrWZ/images.jpg",
+    "rating": 5,
+    "comment": "The rainforest trek was an unforgettable experience! The guides were knowledgeable, and the eco-friendly approach was inspiring.",
+    "location": "Amazon Rainforest, Brazil"
+  },
+  {
+    "id": 2,
+    "name": "James Carter",
+    "image": "https://i.ibb.co.com/qr0F8sC/GJGm8e6f-400x400.jpg",
+    "rating": 4,
+    "comment": "Kayaking through mangroves with my team was a great bonding experience. Loved the serene atmosphere and eco-conscious practices.",
+    "location": "Krabi Mangroves, Thailand"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Lee",
+    "image": "https://i.ibb.co.com/02zvz8h/hyoseon-sophia-lee.jpg",
+    "rating": 5,
+    "comment": "Cycling with my family through scenic routes was the highlight of our vacation. Perfect mix of fun and relaxation!",
+    "location": "Swiss Alps, Switzerland"
+  },
+  {
+    "id": 4,
+    "name": "Carlos Rivera",
+    "image": "https://i.ibb.co.com/1dMcD7L/tv-azteca-prometio-disco-carlos.jpg",
+    "rating": 4.5,
+    "comment": "The desert camel safari was breathtaking! Loved the solar-powered camp and the focus on sustainability.",
+    "location": "Sahara Desert, Morocco"
+  },
+  {
+    "id": 5,
+    "name": "Aisha Mohammed",
+    "image": "https://i.ibb.co.com/nCQJfvy/Aisha-Mohammed.jpg",
+    "rating": 5,
+    "comment": "Our team-building outbound activity was both exciting and educational. Highly recommend it for any corporate group!",
+    "location": "Serengeti National Park, Tanzania"
+  },
+  {
+    "id": 6,
+    "name": "Liam Robinson",
+    "image": "https://i.ibb.co.com/LdWXCF3/129769726-capture-jpg.webp",
+    "rating": 5,
+    "comment": "Exploring glaciers in Iceland was a life-changing adventure! The guide ensured we stayed safe while protecting the environment.",
+    "location": "Vatnajökull Glacier, Iceland"
+  },
+  {
+    "id": 7,
+    "name": "Hannah Williams",
+    "image": "https://i.ibb.co.com/0YpFGM2/107053034-1651161144576-hannah-williams.jpg",
+    "rating": 4.8,
+    "comment": "Snorkeling at the coral reef was mesmerizing! Learning about marine conservation made it even more meaningful.",
+    "location": "Great Barrier Reef, Australia"
+  },
+  {
+    "id": 8,
+    "name": "Ethan Brown",
+    "image": "https://i.ibb.co.com/JK2mdKY/dr-ethan-brown-md-104-320x320-2x.webp",
+    "rating": 4.7,
+    "comment": "Biking with my friends in the Redwoods was exhilarating. The eco-friendly trails made the experience even better.",
+    "location": "Redwood Forest, USA"
+  },
+  {
+    "id": 9,
+    "name": "Isabella Martinez",
+    "image": "https://i.ibb.co.com/6RCKVzx/convert.webp",
+    "rating": 5,
+    "comment": "The Arctic safari was magical! Seeing polar bears in their natural habitat was unforgettable.",
+    "location": "Svalbard, Norway"
+  },
+  {
+    "id": 10,
+    "name": "Oliver Johnson",
+    "image": "https://i.ibb.co.com/c8YHxyk/Olly-Johnson-6-Web-Size.jpg",
+    "rating": 4.9,
+    "comment": "Hiking through Machu Picchu with our guide was unforgettable. Truly an eco-adventure like no other.",
+    "location": "Machu Picchu, Peru"
+  }
+]
