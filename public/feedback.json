@@ -46,37 +46,5 @@
     "rating": 5,
     "comment": "Exploring glaciers in Iceland was a life-changing adventure! The guide ensured we stayed safe while protecting the environment.",
     "location": "Vatnajökull Glacier, Iceland"
-  },
-  {
-    "id": 7,
-    "name": "Hannah Williams",
-    "image": "https://i.ibb.co.com/0YpFGM2/107053034-1651161144576-hannah-williams.jpg",
-    "rating": 4.8,
-    "comment": "Snorkeling at the coral reef was mesmerizing! Learning about marine conservation made it even more meaningful.",
-    "location": "Great Barrier Reef, Australia"
-  },
-  {
-    "id": 8,
-    "name": "Ethan Brown",
-    "image": "https://i.ibb.co.com/JK2mdKY/dr-ethan-brown-md-104-320x320-2x.webp",
-    "rating": 4.7,
-    "comment": "Biking with my friends in the Redwoods was exhilarating. The eco-friendly trails made the experience even better.",
-    "location": "Redwood Forest, USA"
-  },
-  {
-    "id": 9,
-    "name": "Isabella Martinez",
-    "image": "https://i.ibb.co.com/6RCKVzx/convert.webp",
-    "rating": 5,
-    "comment": "The Arctic safari was magical! Seeing polar bears in their natural habitat was unforgettable.",
-    "location": "Svalbard, Norway"
-  },
-  {
-    "id": 10,
-    "name": "Oliver Johnson",
-    "image": "https://i.ibb.co.com/c8YHxyk/Olly-Johnson-6-Web-Size.jpg",
-    "rating": 4.9,
-    "comment": "Hiking through Machu Picchu with our guide was unforgettable. Truly an eco-adventure like no other.",
-    "location": "Machu Picchu, Peru"
   }
 ]

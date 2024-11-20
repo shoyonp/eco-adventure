@@ -16,7 +16,7 @@ const Activities = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-center">
         {/* one */}
-        <div className=" p-4 rounded-lg shadow-xl">
+        <div className=" p-4 rounded-2xl shadow-xl">
           <span className="font-bold text-2xl mb-3 text-green-700">
             <GiMountainRoad />
           </span>
@@ -35,7 +35,7 @@ const Activities = () => {
           </p>
         </div>
         {/* two */}
-        <div className=" p-4 rounded-lg shadow-xl">
+        <div className=" p-4 rounded-2xl shadow-xl">
           <span className="font-bold text-2xl mb-3 text-green-600">
             <GiCirclingFish />
           </span>
@@ -52,7 +52,7 @@ const Activities = () => {
           </p>
         </div>
         {/* three */}
-        <div className=" p-4 rounded-lg shadow-xl">
+        <div className=" p-4 rounded-2xl shadow-xl">
           <span className="font-bold text-2xl mb-3 text-green-700">
             <IoBicycleSharp />
           </span>
@@ -72,7 +72,7 @@ const Activities = () => {
           </p>
         </div>
         {/* four */}
-        <div className=" p-4 rounded-lg shadow-xl">
+        <div className=" p-4 rounded-2xl shadow-xl">
           <span className="font-bold text-2xl mb-3 text-green-700">
             <BsFillPeopleFill />
           </span>

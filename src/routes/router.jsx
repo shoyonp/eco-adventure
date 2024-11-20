@@ -9,6 +9,7 @@ import Detail from "../pages/Detail";
 import PrivateRoute from "./PrivateRoute";
 import Allplaces from "../pages/Allplaces";
 import MyProfile from "../layouts/MyProfile";
+import UpdateProfile from "../pages/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <MyProfile></MyProfile>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "updateProfile",
+        element: (
+          <PrivateRoute>
+            <UpdateProfile></UpdateProfile>
           </PrivateRoute>
         ),
       },

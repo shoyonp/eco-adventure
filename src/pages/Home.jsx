@@ -4,8 +4,11 @@ import { NavLink, useLoaderData } from "react-router-dom";
 import Card from "../components/Card";
 import Activities from "../components/Activities";
 import Feedback from "../components/Feedback";
+import Newsletter from "../components/Newsletter";
+import UseTitle from "../components/UseTitle";
 
 const Home = () => {
+  UseTitle("Home")
   const packages = useLoaderData();
   const { packagesData, feedbackData } = packages;
   return (
@@ -27,6 +30,7 @@ const Home = () => {
         {" "}
         <Activities></Activities>
       </div>
+      <div><Newsletter></Newsletter></div>
       <div className="mb-10">
         <Feedback feedbackData={feedbackData}></Feedback>
       </div>

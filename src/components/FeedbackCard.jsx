@@ -2,7 +2,7 @@ const FeedbackCard = ({ feedback }) => {
   const { name, image, rating, location, comment } = feedback;
   return (
     <div>
-      <div className="card bg-base-100 w-80 shadow-xl">
+      <div className="card bg-base-100 hover:bg-slate-300 w-80 shadow-xl">
         <div className="card-body">
           <div className="flex items-center gap-5">
             <img

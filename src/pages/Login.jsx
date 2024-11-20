@@ -3,9 +3,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { auth, AuthContext } from "../provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { sendPasswordResetEmail, signInWithPopup } from "firebase/auth";
+import UseTitle from "../components/UseTitle";
 
 
 const Login = () => {
+  UseTitle("Login")
   const { userLogin, setUser, googleLogin, forgetPassword } =
     useContext(AuthContext);
   const [error, setError] = useState({});
