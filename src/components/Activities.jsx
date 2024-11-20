@@ -14,20 +14,20 @@ const Activities = () => {
         Each{" "}
         <span className="italic font-medium text-green-700">Destination</span>
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 items-center">
         {/* one */}
-        <div className=" p-4 rounded-2xl shadow-xl">
-          <span className="font-bold text-2xl mb-3 text-green-700">
+        <div className=" p-4 bg-[#E8F5E9] rounded-2xl shadow-lg ">
+          <span className="font-bold text-2xl mb-3 text-[#FBC02D]">
             <GiMountainRoad />
           </span>
-          <h2 className="text-lg font-bold mb-3 mt-3">
+          <h2 className="text-lg text-[#2E7D32] font-bold mb-3 mt-3">
             Hiking Route With Team
           </h2>
-          <p className=" font-normal text-gray-500 mb-3">
+          <p className=" font-normal text-[#333333] mb-3">
             Explore scenic trails with your team, building camaraderie and
             enjoying nature's beauty together on an adventurous group hike
           </p>
-          <p className="font-medium text-base mb-3 text-green-700 flex items-center gap-2">
+          <p className="font-medium text-base mb-3 text-[#1B5E20] flex items-center gap-2">
             <Link to="/dashboard" href="">
               LEARN MORE
             </Link>
@@ -35,16 +35,18 @@ const Activities = () => {
           </p>
         </div>
         {/* two */}
-        <div className=" p-4 rounded-2xl shadow-xl">
-          <span className="font-bold text-2xl mb-3 text-green-600">
+        <div className=" p-4  bg-[#E8F5E9]  rounded-2xl shadow-lg">
+          <span className="font-bold text-2xl mb-3 text-[#FBC02D]">
             <GiCirclingFish />
           </span>
-          <h2 className="text-lg font-bold mb-3 mt-3">Fishing With Team</h2>
-          <p className=" font-normal text-gray-500 mb-3">
+          <h2 className="text-lg  text-[#2E7D32] font-bold mb-3 mt-3">
+            Fishing With Team
+          </h2>
+          <p className=" font-normal text-[#333333] mb-3">
             "Relax and bond with your team while fishing in serene waters,
             creating shared moments of peace and connection
           </p>
-          <p className="font-medium text-base mb-3 text-green-700 flex items-center gap-2">
+          <p className="font-medium text-base mb-3 text-[#1B5E20] flex items-center gap-2">
             <Link to="/dashboard" href="">
               LEARN MORE
             </Link>
@@ -52,19 +54,19 @@ const Activities = () => {
           </p>
         </div>
         {/* three */}
-        <div className=" p-4 rounded-2xl shadow-xl">
-          <span className="font-bold text-2xl mb-3 text-green-700">
+        <div className=" p-4  bg-[#E8F5E9] rounded-2xl shadow-lg">
+          <span className="font-bold text-2xl mb-3 text-[#FBC02D]">
             <IoBicycleSharp />
           </span>
-          <h2 className="text-lg font-bold mb-3 mt-3">
+          <h2 className="text-lg text-[#2E7D32] font-bold mb-3 mt-3">
             Bike Routes With Family
           </h2>
-          <p className=" font-normal text-gray-500 mb-3">
+          <p className=" font-normal text-[#333333] mb-3">
             Enjoy fun-filled family biking adventures along safe, picturesque
             routes, perfect for creating cherished memories and outdoor
             excitement
           </p>
-          <p className="font-medium text-base mb-3 text-green-700 flex items-center gap-2">
+          <p className="font-medium text-base mb-3 text-[#1B5E20] flex items-center gap-2">
             <Link to="/dashboard" href="">
               LEARN MORE
             </Link>
@@ -72,17 +74,19 @@ const Activities = () => {
           </p>
         </div>
         {/* four */}
-        <div className=" p-4 rounded-2xl shadow-xl">
-          <span className="font-bold text-2xl mb-3 text-green-700">
+        <div className=" p-4 bg-[#E8F5E9] rounded-2xl shadow-lg">
+          <span className="font-bold text-2xl mb-3 text-[#FBC02D]">
             <BsFillPeopleFill />
           </span>
-          <h2 className="text-lg font-bold mb-3 mt-3">Outbound With Team</h2>
-          <p className=" font-normal text-gray-500 mb-3">
+          <h2 className="text-lg text-[#2E7D32] font-bold mb-3 mt-3">
+            Outbound With Team
+          </h2>
+          <p className=" font-normal text-[#333333] mb-3">
             Strengthen team spirit through engaging outbound activities that
             inspire collaboration, creativity, and unforgettable experiences in
             nature
           </p>
-          <p className="font-medium text-base mb-3 text-green-700 flex items-center gap-2">
+          <p className="font-medium text-base mb-3 text-[#1B5E20] flex items-center gap-2">
             <Link to="/dashboard" href="">
               LEARN MORE
             </Link>

@@ -2,7 +2,7 @@ const FeedbackCard = ({ feedback }) => {
   const { name, image, rating, location, comment } = feedback;
   return (
     <div>
-      <div className="card bg-base-100 hover:bg-slate-300 w-80 shadow-xl">
+      <div className="card bg-[#FAFAF5] hover:bg-[#DCE9DC]  w-80 shadow-md">
         <div className="card-body">
           <div className="flex items-center gap-5">
             <img
@@ -10,41 +10,41 @@ const FeedbackCard = ({ feedback }) => {
               src={image}
               alt=""
             />
-            <h2 className="card-title">{name}</h2>
+            <h2 className="card-title text-[#333333]">{name}</h2>
           </div>
-          <div className="font-medium text-base">
-            Location: <span className="italic text-green-700">{location}</span>
+          <div className="font-medium text-base text-[#1B5E20]">
+            Location: <span className="italic">{location}</span>
           </div>
-          <p className="text-black/60 text-sm">{comment}</p>
-          <div className="flex items-center gap-5">
-            Rating: {rating}{" "}
+          <p className="text-[#555555] text-sm">{comment}</p>
+          <div className="flex items-center gap-3">
+             {rating}{" "}
             <div className="">
-              <div className="rating">
+              <div className="rating rating-sm">
                 <input
                   type="radio"
                   name="rating-4"
-                  className="mask mask-star-2 bg-green-500"
+                  className="mask mask-star-2 bg-[#FBC02D]"
                 />
                 <input
                   type="radio"
                   name="rating-4"
-                  className="mask mask-star-2 bg-green-500"
+                  className="mask mask-star-2 bg-[#FBC02D]"
                   defaultChecked
                 />
                 <input
                   type="radio"
                   name="rating-4"
-                  className="mask mask-star-2 bg-green-500"
+                  className="mask mask-star-2 bg-[#FBC02D]"
                 />
                 <input
                   type="radio"
                   name="rating-4"
-                  className="mask mask-star-2 bg-green-500"
+                  className="mask mask-star-2 bg-[#FBC02D]"
                 />
                 <input
                   type="radio"
                   name="rating-4"
-                  className="mask mask-star-2 bg-green-500"
+                  className="mask mask-star-2 bg-[#FBC02D]"
                 />
               </div>
             </div>

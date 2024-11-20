@@ -30,10 +30,10 @@ const Home = () => {
         {" "}
         <Activities></Activities>
       </div>
-      <div><Newsletter></Newsletter></div>
       <div className="mb-10">
         <Feedback feedbackData={feedbackData}></Feedback>
       </div>
+      <div className="mb-5 "><Newsletter></Newsletter></div>
     </div>
   );
 };

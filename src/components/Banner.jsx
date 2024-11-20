@@ -1,4 +1,3 @@
-import React from "react";
 import slider from "../assets/assets/wallpaperflare.com_wallpaper (1).jpg"
 const Banner = () => {
   return (
