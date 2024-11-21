@@ -6,7 +6,6 @@ import UseTitle from "../components/UseTitle";
 const MyProfile = () => {
   UseTitle("My Profile")
   const { user } = useContext(AuthContext);
-  console.log(user);
   return (
     <>
       <div className="card items-center bg-base-100 w-full max-w-lg shrink-0 shadow-2xl p-10 my-10 rounded-md mx-auto">

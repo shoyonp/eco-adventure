@@ -48,8 +48,8 @@ const Login = () => {
   const handleForgetPassword = () => {
     const email = emailRef.current.value;
     if (!email) {
-      // toast("please provide an valid email");
-      console.log("valid email");
+      alert("please provide an valid email");
+      // console.log("valid email");
     } else {
       sendPasswordResetEmail(auth, email).then(() => {
         alert("Password reset email sent, please check your email ");
