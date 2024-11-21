@@ -10,11 +10,13 @@ import PrivateRoute from "./PrivateRoute";
 import Allplaces from "../pages/Allplaces";
 import MyProfile from "../layouts/MyProfile";
 import UpdateProfile from "../pages/UpdateProfile";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout></HomeLayout>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -79,9 +81,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "*",
-    element: <h1>Error</h1>,
-  },
+  // {
+  //   path: "*",
+  //   element: <ErrorPage></ErrorPage>,
+  // },
 ]);
 export default router;

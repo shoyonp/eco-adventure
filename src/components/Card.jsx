@@ -23,7 +23,7 @@ const Card = ({ pack }) => {
           <div className="card-actions justify-end">
             <Link
               to={`/detail/${pack.id}`}
-              className="btn bg-green-600 text-white border-none shadow-md"
+              className="btn bg-green-700 text-white border-none shadow-md"
             >
               Explore Now
             </Link>

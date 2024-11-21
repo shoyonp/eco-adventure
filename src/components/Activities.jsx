@@ -8,11 +8,11 @@ import { Link } from "react-router-dom";
 const Activities = () => {
   return (
     <div>
-      <h2 className="mb-5 text-4xl font-extrabold text-center">
+      <h2 className="mb-5 text-4xl text-[#064E3B] tracking-wider font-extrabold text-center">
         There Are Many{" "}
-        <span className="italic font-medium text-green-700">Activities</span> In
+        <span className="italic font-medium text-[#FBC02D]">Activities</span> In
         Each{" "}
-        <span className="italic font-medium text-green-700">Destination</span>
+        <span className="italic font-medium text-[#FBC02D]">Destination</span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 items-center">
         {/* one */}

@@ -107,7 +107,7 @@ const Login = () => {
         <div className="mb-3 mx-auto">
           <button
             onClick={handleGoogleSignIn}
-            className="btn bg-none text-green-600 "
+            className="btn bg-none text-green-700 "
           >
             <FcGoogle className="text-black"></FcGoogle> Login With Google
           </button>

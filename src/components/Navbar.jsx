@@ -26,7 +26,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -81,14 +81,14 @@ const Navbar = () => {
           {user && user?.email ? (
             <button
               onClick={UserLogOut}
-              className="btn border-none bg-green-600 text-white"
+              className="btn border-none bg-green-700 text-white"
             >
               Logout
             </button>
           ) : (
             <NavLink
               to="/auth/login"
-              className="btn border-none bg-green-600 text-white"
+              className="btn border-none bg-green-700 text-white"
             >
               Login
             </NavLink>

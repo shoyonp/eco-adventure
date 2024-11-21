@@ -26,7 +26,7 @@ const MyProfile = () => {
         </p>
         <p className="text-lg font-medium mb-4">Email: <span className="font-normal italic text-green-700">{user.email}</span></p>
         <img className="rounded-md w-52 mb-4" src={user.photoURL} alt="" />
-        <Link  to="/updateProfile" className="btn text-white bg-green-600">
+        <Link  to="/updateProfile" className="btn text-white bg-green-700">
           Update
         </Link>
       </div>

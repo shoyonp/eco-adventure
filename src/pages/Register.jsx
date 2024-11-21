@@ -1,12 +1,11 @@
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import {  AuthContext } from "../provider/AuthProvider";
+import { AuthContext } from "../provider/AuthProvider";
 import UseTitle from "../components/UseTitle";
 
 const Register = () => {
-  UseTitle("Register")
-  const { creatNewUser,  setUser, updateUserProfile } =
-    useContext(AuthContext);
+  UseTitle("Register");
+  const { creatNewUser, setUser, updateUserProfile } = useContext(AuthContext);
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const handleSubmit = (e) => {
@@ -133,7 +132,7 @@ const Register = () => {
             />
           </div>
           <div className="form-control mt-6">
-            <button className="btn bg-green-600 text-white ">Register</button>
+            <button className="btn bg-green-700 text-white ">Register</button>
           </div>
         </form>
         {error && (

@@ -8,12 +8,14 @@ import Newsletter from "../components/Newsletter";
 import UseTitle from "../components/UseTitle";
 
 const Home = () => {
-  UseTitle("Home")
+  UseTitle("Home");
   const packages = useLoaderData();
   const { packagesData, feedbackData } = packages;
   return (
     <div>
-      <Banner></Banner>
+      <div className="my-10">
+        <Banner></Banner>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {packagesData &&
           packagesData
@@ -22,7 +24,7 @@ const Home = () => {
       </div>
       <NavLink
         to="/allPlaces"
-        className=" my-6 btn bg-green-600 text-white border-none shadow-md"
+        className=" my-6 btn bg-green-700 text-white border-none shadow-md"
       >
         Show More
       </NavLink>
@@ -33,7 +35,9 @@ const Home = () => {
       <div className="mb-10">
         <Feedback feedbackData={feedbackData}></Feedback>
       </div>
-      <div className="mb-5 "><Newsletter></Newsletter></div>
+      <div className="mb-5 ">
+        <Newsletter></Newsletter>
+      </div>
     </div>
   );
 };

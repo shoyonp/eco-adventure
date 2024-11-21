@@ -1,31 +1,50 @@
-import slider from "../assets/assets/wallpaperflare.com_wallpaper (1).jpg"
 const Banner = () => {
   return (
     <div>
-      <div className="carousel w-full rounded-md">
-        <div id="item1" className="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-            className="w-full"
-          />
+      <div className="carousel rounded-md w-full">
+        <div id="item1" className="carousel-item bg-banner1 w-full h-[400px]">
+          <div className="flex flex-col mx-auto items-center my-auto">
+            <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
+              Journey Into the Heart of the Jungle
+            </h1>
+            <p className="text-lg mb-5 font-normal text-[#F3F4F6] tracking-wide	">
+              Explore lush rainforests, cascading waterfalls, and diverse
+              wildlife. Your adventure starts here.
+            </p>
+          </div>
         </div>
-        <div id="item2" className="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-            className="w-full"
-          />
+        <div id="item2" className="carousel-item bg-banner2 w-full">
+          <div className="flex flex-col mx-auto items-center my-auto">
+            <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
+              Conquer Majestic Peaks
+            </h1>
+            <p className="text-lg mb-5 font-normal text-[#F3F4F6] tracking-wide	">
+              Experience the serenity of snow-capped mountains and breathtaking
+              trails.
+            </p>
+          </div>
         </div>
-        <div id="item3" className="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-            className="w-full"
-          />
+        <div id="item3" className="carousel-item bg-banner3 w-full">
+          <div className="flex flex-col mx-auto items-center my-auto">
+            <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
+              Dive Into an Underwater Paradise
+            </h1>
+            <p className="text-lg mb-5 font-normal text-[#F3F4F6] tracking-wide	">
+              Discover vibrant coral reefs and marine life in eco-conscious
+              diving adventures
+            </p>
+          </div>
         </div>
-        <div id="item4" className="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-            className="w-full"
-          />
+        <div id="item4" className="carousel-item bg-banner4 w-full">
+          <div className="flex flex-col mx-auto items-center my-auto">
+            <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
+              Unwind in the Sands of Time{" "}
+            </h1>
+            <p className="text-lg mb-5 font-normal text-[#F3F4F6] tracking-wide	">
+              Experience the beauty of golden deserts, camel rides, and starry
+              nights.
+            </p>
+          </div>
         </div>
       </div>
       <div className="flex w-full justify-center gap-2 py-2">

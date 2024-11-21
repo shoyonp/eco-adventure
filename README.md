@@ -1,8 +1,15 @@
-# React + Vite
+live link:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+my projets name is - Eco Adventure
+this is an expolre different places to visit adventure form this website you can plane your adventure tour with your family friend etc
+- there are dynamic cards 
+- cards details which you can't see if you logged out 
+- you have to login to set details
+- you can update your profile
+- you can creat an account ,and you forgot your password you can reset password
+- you can login with google
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm packages
+- react tostyfy
+- react router
+- react icon
