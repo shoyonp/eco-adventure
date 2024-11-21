@@ -5,11 +5,9 @@ import { FcGoogle } from "react-icons/fc";
 import { sendPasswordResetEmail, signInWithPopup } from "firebase/auth";
 import UseTitle from "../components/UseTitle";
 
-
 const Login = () => {
-  UseTitle("Login")
-  const { userLogin, setUser, googleLogin, forgetPassword } =
-    useContext(AuthContext);
+  UseTitle("Login");
+  const { userLogin, setUser, googleLogin } = useContext(AuthContext);
   const [error, setError] = useState({});
   const location = useLocation();
   const navigate = useNavigate();
@@ -23,7 +21,7 @@ const Login = () => {
     userLogin(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         setUser(user);
         navigate(location?.state ? location.state : "/");
       })
@@ -38,7 +36,7 @@ const Login = () => {
         const user = result.user;
         setUser(user);
         navigate(location?.state ? location.state : "/");
-        console.log(user);
+        // console.log(user);
       })
       .catch((error) => {
         console.log(error.message);
