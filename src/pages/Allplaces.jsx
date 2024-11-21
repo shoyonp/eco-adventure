@@ -14,7 +14,7 @@ const Allplaces = () => {
       </div>
       <Link
         to="/"
-        className="btn bg-green-600 text-white border-none shadow-md mb-5"
+        className="btn bg-green-700 text-white border-none shadow-md mb-5"
       >
         Home
       </Link>

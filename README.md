@@ -10,6 +10,6 @@ this is an expolre different places to visit adventure form this website you can
 - you can login with google
 
 npm packages
-- react tostyfy
+- react tostify
 - react router
 - react icon
