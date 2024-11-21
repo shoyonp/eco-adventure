@@ -56,7 +56,7 @@ const UpdateProfile = () => {
                 />
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-green-600 text-white ">
+                <button className="btn bg-green-700 text-white ">
                   Update Profile
                 </button>
               </div>

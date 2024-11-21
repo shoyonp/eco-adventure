@@ -7,7 +7,7 @@ const Banner = () => {
             <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
               Journey Into the Heart of the Jungle
             </h1>
-            <p className="text-lg mb-5 font-normal text-[#F3F4F6] tracking-wide	">
+            <p className="text-sm w-4/5 md:w-4/5 md:text-lg mb-5 font-normal text-[#F3F4F6] tracking-wide text-center">
               Explore lush rainforests, cascading waterfalls, and diverse
               wildlife. Your adventure starts here.
             </p>
@@ -18,7 +18,7 @@ const Banner = () => {
             <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
               Conquer Majestic Peaks
             </h1>
-            <p className="text-lg mb-5 font-normal text-[#F3F4F6] tracking-wide	">
+            <p className="text-sm w-4/5 md:w-4/5 md:text-lg text-center mb-5 font-normal text-[#F3F4F6] tracking-wide	">
               Experience the serenity of snow-capped mountains and breathtaking
               trails.
             </p>
@@ -29,7 +29,7 @@ const Banner = () => {
             <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
               Dive Into an Underwater Paradise
             </h1>
-            <p className="text-lg mb-5 font-normal text-[#F3F4F6] tracking-wide	">
+            <p className="text-sm w-4/5 md:w-4/5 md:text-lg text-center mb-5 font-normal text-[#F3F4F6] tracking-wide	">
               Discover vibrant coral reefs and marine life in eco-conscious
               diving adventures
             </p>
@@ -40,7 +40,7 @@ const Banner = () => {
             <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
               Unwind in the Sands of Time{" "}
             </h1>
-            <p className="text-lg mb-5 font-normal text-[#F3F4F6] tracking-wide	">
+            <p className="text-sm w-4/5 md:w-4/5 md:text-lg text-center mb-5 font-normal text-[#F3F4F6] tracking-wide	">
               Experience the beauty of golden deserts, camel rides, and starry
               nights.
             </p>

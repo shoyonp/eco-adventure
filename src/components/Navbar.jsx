@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
-import logo from "../assets/assets/Green-Eco-Adventure-Maps-Logo-scaled.jpg";
+import logo from "../assets/assets/logo.png";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
@@ -53,7 +53,7 @@ const Navbar = () => {
             </ul>
           </div>
           <img src={logo} className="hidden md:flex w-10" alt="" />
-          <a className="text-xl font-bold text-green-600">Eco-Adventure</a>
+          <a className="text-base md:text-xl font-bold text-green-700">Eco-Adventure</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
