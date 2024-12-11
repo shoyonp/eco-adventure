@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <div>
       <div className="carousel rounded-md w-full">
-        <div id="item1" className="carousel-item bg-banner1 w-full h-[400px]">
+        <div id="item1" className="carousel-item bg-banner1 bg-cover w-full h-[400px]">
           <div className="flex flex-col mx-auto items-center my-auto">
             <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
               Journey Into the Heart of the Jungle
@@ -13,7 +13,7 @@ const Banner = () => {
             </p>
           </div>
         </div>
-        <div id="item2" className="carousel-item bg-banner2 w-full">
+        <div id="item2" className="carousel-item bg-banner2 bg-cover w-full">
           <div className="flex flex-col mx-auto items-center my-auto">
             <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
               Conquer Majestic Peaks
@@ -24,7 +24,7 @@ const Banner = () => {
             </p>
           </div>
         </div>
-        <div id="item3" className="carousel-item bg-banner3 w-full">
+        <div id="item3" className="carousel-item bg-banner3 bg-cover w-full">
           <div className="flex flex-col mx-auto items-center my-auto">
             <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
               Dive Into an Underwater Paradise
@@ -35,7 +35,7 @@ const Banner = () => {
             </p>
           </div>
         </div>
-        <div id="item4" className="carousel-item bg-banner4 w-full">
+        <div id="item4" className="carousel-item bg-banner4 bg-cover w-full">
           <div className="flex flex-col mx-auto items-center my-auto">
             <h1 className="text-5xl my-5 text-center font-bold text-white shadow-black/50">
               Unwind in the Sands of Time{" "}
