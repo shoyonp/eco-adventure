@@ -1,5 +1,6 @@
 My projets name is - Eco Adventure
 this is an expolre different places to visit adventure form this website you can plane your adventure tour with your family friend etc
+Features : 
 - there are dynamic cards 
 - cards details which you can't see if you logged out 
 - you have to login to set details
